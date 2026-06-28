@@ -1,0 +1,26 @@
+[project]
+name = "fazle-llm-cost-router"
+version = "0.1.0"
+description = "LLM Cost Router — intelligent model routing with Redis cache and Langfuse observability"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.138.1",
+    "langfuse>=4.0.0",
+    "litellm>=1.87.0",
+    "pydantic-settings>=2.0",
+    "redis>=5.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.4.0",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
