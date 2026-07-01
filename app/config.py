@@ -18,8 +18,8 @@ class Settings(BaseSettings):
     app_version: str = "1.0.0"
 
     gemini_api_key: str
-    cheap_model: str = "gemini/gemini-2.5-flash"
-    expensive_model: str = "gemini/gemini-2.5-pro"
+    cheap_model: str = "gemini/gemini-3.1-flash-lite"
+    expensive_model: str = "gemini/gemini-3.5-flash"
     anthropic_api_key: str = ""
 
     complexity_threshold: float = 0.5

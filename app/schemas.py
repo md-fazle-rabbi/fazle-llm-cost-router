@@ -1,6 +1,6 @@
 """Pydantic V2 request and response schemas — the API contract."""
 
-from typing import Literal
+from typing import Literal, cast
 from pydantic import BaseModel, Field
 
 
@@ -57,3 +57,12 @@ class CostStatsResponse(BaseModel):
     estimated_savings_usd: float
     estimated_savings_pct: float
     langfuse_dashboard_url: str
+
+
+RoutingDecision = Literal["cheap", "expensive"]
+
+
+def validate_routing_decision(value: str) -> RoutingDecision:
+    if value not in ("cheap", "expensive"):
+        raise ValueError(f"Invalid routing_decision in cache: {value!r}")
+    return cast(RoutingDecision, value)
