@@ -62,7 +62,8 @@ async def route_and_complete(
         model=model,
         messages=messages,
         max_tokens=1024,
-        timeout=30,
+        timeout=60,
+        num_retries=2,  # auto-retry on Timeout/APIConnectionError before surfacing 500
         metadata={
             "routing_decision": routing_decision,
             "complexity_score": complexity.score,
