@@ -81,10 +81,6 @@ uv run uvicorn app.main:app --reload
 - OWASP LLM09:2025 — Complex queries routed to stronger models (hallucination mitigation)
 - OWASP ASI02:2026 — Atomic Lua locking prevents duplicate expensive calls (tool misuse via race condition)
 
-## Freelance Service
-
-This is a productized fixed-price service: **$1,200** — LLM API cost reduction setup with live Langfuse dashboard proof.
-
 ## Author
 
 **Md. Fazle Rabbi** — AI Engineer · FastAPI · LangGraph · MCP · OWASP LLM:2025
