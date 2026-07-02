@@ -26,8 +26,8 @@ Most teams send every query to their most expensive model. This router:
 
 ## Results
 
-- Simple query (`gemini-3.1-flash-lite`): $0.25 / 1M input tokens | $1.50 / 1M output tokens
-- Complex query (`gemini-3.5-flash`): $1.50 / 1M input tokens | $9.00 / 1M output tokens
+- Simple query (`gemini-3.1-flash-lite`)
+- Complex query (`gemini-2.5-flash`)
 - Cached repeat query: $0.00
 - Typical savings on mixed traffic: **30-70%** vs always-expensive routing
 
@@ -83,4 +83,4 @@ uv run uvicorn app.main:app --reload
 
 ## Author
 
-**Md. Fazle Rabbi** — AI Engineer · FastAPI · LangGraph · MCP · OWASP LLM:2025
+**Fazle Rabbi** — AI Engineer · FastAPI · LangGraph · MCP · OWASP LLM:2025

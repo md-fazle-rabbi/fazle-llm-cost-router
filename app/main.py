@@ -3,7 +3,7 @@
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 
-import redis.asyncio as aioredis
+import redis.asyncio as aioredis # type: ignore
 from fastapi import FastAPI
 
 from app.cache import CacheManager

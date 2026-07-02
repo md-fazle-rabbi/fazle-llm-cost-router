@@ -3,7 +3,7 @@
 import re
 from dataclasses import dataclass
 
-import litellm
+import litellm  # type: ignore
 
 from app.config import get_settings
 

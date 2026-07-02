@@ -5,8 +5,8 @@ import hashlib
 import json
 from pathlib import Path
 
-import redis.asyncio as aioredis
-from redis.exceptions import ConnectionError as RedisConnectionError
+import redis.asyncio as aioredis  # type: ignore
+from redis.exceptions import ConnectionError as RedisConnectionError  # type: ignore
 
 from app.config import get_settings
 

@@ -19,22 +19,22 @@ class Settings(BaseSettings):
 
     gemini_api_key: str
     cheap_model: str = "gemini/gemini-3.1-flash-lite"
-    expensive_model: str = "gemini/gemini-3.5-flash"
+    expensive_model: str = "gemini/gemini-2.5-flash"
     anthropic_api_key: str = ""
 
     complexity_threshold: float = 0.5
     max_tokens_cheap: int = 150
 
-    redis_url: str = "redis://localhost:6379/0"
+    redis_url: str = ""
     cache_ttl_seconds: int = 3600
 
     langfuse_secret_key: str = ""
     langfuse_public_key: str = ""
-    langfuse_base_url: str = "https://cloud.langfuse.com"
+    langfuse_base_url: str = ""
     langfuse_project_id: str = ""
 
 
 @lru_cache
 def get_settings() -> Settings:
     """Return a cached singleton Settings instance."""
-    return Settings()
+    return Settings() # type: ignore

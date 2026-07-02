@@ -13,7 +13,7 @@
       - key: CHEAP_MODEL
         value: gemini/gemini-3.1-flash-lite
       - key: EXPENSIVE_MODEL
-        value: gemini/gemini-3.5-flash
+        value: gemini/gemini-2.5-flash
       - key: COMPLEXITY_THRESHOLD
         value: '0.5'
       - key: MAX_TOKENS_CHEAP
