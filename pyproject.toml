@@ -5,7 +5,7 @@ description = "LLM Cost Router — intelligent model routing with Redis cache an
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "fastapi[standard]>=0.138.1",
+    "fastapi[standard]>=0.139.0",
     "langfuse>=4.13.0",
     "litellm>=1.87.0",
     "pydantic-settings>=2.0",
