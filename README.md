@@ -83,4 +83,6 @@ uv run uvicorn app.main:app --reload
 
 ## Author
 
-**Fazle Rabbi** — AI Engineer · FastAPI · LangGraph · MCP · OWASP LLM:2025
+**Fazle Rabbi** 
+Full-Stack AI Engineer specializing in secure production AI systems.
+Contact: mfrabbi.ai@gmail.com | LinkedIn: https://www.linkedin.com/in/fazle-rabbi-ai/
